@@ -25,7 +25,19 @@ ClassLoader::addNamespaces(array
  */
 ClassLoader::addClasses(array
 (
+	// Modules
+	'BugBuster\MobileDetection\ModuleDeviceInfo' => 'system/modules/mobiledetection/modules/ModuleDeviceInfo.php',
+
 	// Classes
 	'Mobile_Detect'                              => 'system/modules/mobiledetection/classes/Mobile_Detect.php',
 	'BugBuster\MobileDetection\Mobile_Detection' => 'system/modules/mobiledetection/classes/Mobile_Detection.php',
+));
+
+
+/**
+ * Register the templates
+ */
+TemplateLoader::addFiles(array
+(
+	'mod_mobiledetection_device_fe' => 'system/modules/mobiledetection/templates',
 ));

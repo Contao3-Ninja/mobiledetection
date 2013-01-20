@@ -29,6 +29,11 @@ namespace BugBuster\MobileDetection;
  */
 class Mobile_Detection extends \System
 {
+    /**
+     * Current version of the classes.
+     */
+    const MOBILE_DETECTION_VERSION  = '1.0.0'; // Version of this class
+    const MOBILE_DETECT_VERSION     = '2.5.3'; // Version of class Mobile_Detect
 
 	/**
 	 * Current object instance (Singleton)
@@ -41,18 +46,19 @@ class Mobile_Detection extends \System
 	 */
 	protected function __construct() 
 	{
-	    $this->import('Mobile_Detect','MD');
+	    parent::__construct();
+	    $this->import('Mobile_Detect','MobileDetect');
     }
 	
 	/**
 	 * Prevent cloning of the object (Singleton)
 	 */
-	final private function __clone() {}
+	//final private function __clone() {}
 	
 	/**
 	 * Return the current object instance (Singleton)
 	 * @return String
-	 */
+	 *//*
 	public static function getInstance()
 	{
 	    if (!is_object(self::$objInstance))
@@ -61,9 +67,23 @@ class Mobile_Detection extends \System
 	    }
 	
 	    return self::$objInstance;
+	}*/
+
+	/**
+	 * Returns the version number
+	 *
+	 * @return string
+	 * @access public
+	 */
+	public function getVersion()
+	{
+	    return self::MOBILE_DETECTION_VERSION;
 	}
 
-
+	public function getVersionVendor()
+	{
+	    return self::MOBILE_DETECT_VERSION;
+	}
 
     /**
      * Check the type of the device
@@ -72,7 +92,7 @@ class Mobile_Detection extends \System
      */
     public function getDeviceType()
     {
-        return ($this->MD->isMobile() ? ($this->MD->isTablet() ? 'tablet' : 'phone') : 'computer');
+        return ($this->MobileDetect->isMobile() ? ($this->MobileDetect->isTablet() ? 'tablet' : 'phone') : 'computer');
     }
     
     /**
@@ -83,7 +103,7 @@ class Mobile_Detection extends \System
      */
     public function isMobile()
     {
-        return $this->MD->isMobile();
+        return $this->MobileDetect->isMobile();
     }
 
     /**
@@ -92,9 +112,9 @@ class Mobile_Detection extends \System
      *
      * @return bool
      */
-    public static function isTablet()
+    public function isTablet()
     {
-        return $this->MD->isTablet();
+        return $this->MobileDetect->isTablet();
     }
     
     /**
@@ -108,21 +128,21 @@ class Mobile_Detection extends \System
         $key = substr($name, 2);
         return $this->MD->matchUAAgainstKey($key);
         */
-        return $this->MD->{$name}();
+        return $this->MobileDetect->{$name}();
     }
     
     /**
-     * checkRules - Custom detection methods
+     * getMobileRules - Custom detection methods, only on mobile devices
      * 
      * @return    array    array(name => value, name => value, ...)
      * @example            array('Samsung', 'AndroidOS', 'Safari')
      */
-    public function checkRules()
+    public function getMobileRules()
     {
         $arrReturn = array();
-        foreach($this->MD->getRules() as $name => $regex)
+        foreach($this->MobileDetect->getRules() as $name => $regex)
         {
-            $check = $this->MD->{'is'.$name}();
+            $check = $this->MobileDetect->{'is'.$name}();
             if($check)
             {
                 array_push($arrReturn, $name);
@@ -138,7 +158,7 @@ class Mobile_Detection extends \System
      */
     public function getMobileGrade()
     {
-        return $this->MD->mobileGrade();
+        return $this->MobileDetect->mobileGrade();
     }
     
 }
