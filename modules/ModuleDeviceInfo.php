@@ -47,8 +47,8 @@ class ModuleDeviceInfo extends \Module
             $objTemplate->wildcard = '### Mobile_Detection Device Info ###';
             	
             $objTemplate->title = $this->headline;
-            $objTemplate->id = $this->id;
-            $objTemplate->link = $this->name;
+            $objTemplate->id    = $this->id;
+            $objTemplate->link  = $this->name;
 
             $objTemplate->href = 'contao/main.php?do=themes&amp;table=tl_module&amp;act=edit&amp;id=' . $this->id;
 
@@ -74,7 +74,7 @@ class ModuleDeviceInfo extends \Module
         $this->Template->arrRules  = $this->Mobile_Detection->getMobileRules();
         
         // get module version
-        $this->Template->version = $this->Mobile_Detection->getVersion();
+        $this->Template->version       = $this->Mobile_Detection->getVersion();
         $this->Template->versionvendor = $this->Mobile_Detection->getVersionVendor();
     }
 
