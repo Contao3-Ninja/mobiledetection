@@ -14,7 +14,7 @@ You have two options:
 
 ## Mobile_Detect (original class)
 ```php
-$this->import('Mobile_Detect');
+include '<path>/Mobile_Detect.php';
 
 $detect = new Mobile_Detect();
  
@@ -46,7 +46,7 @@ if ($this->Mobile_Detection->isTablet())
 echo $this->Mobile_Detection->getMobileGrade(); // A|B|C
 
 // Check mobile rules
-$arrRules = $this->Mobile_Detection->getMobileRules(); // e.g. array('SamsungTablet','AndroidOS','Safari')
+$arrRules = $this->Mobile_Detection->getMobileRules(); // result e.g. array('SamsungTablet','AndroidOS','Safari')
 ```
 See demo module "MobileDetectionDemo".
 
