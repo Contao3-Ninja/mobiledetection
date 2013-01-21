@@ -32,7 +32,7 @@ class Mobile_Detection extends \System
     /**
      * Current version of the classes.
      */
-    const MOBILE_DETECTION_VERSION  = '1.0.0'; // Version of this class
+    const MOBILE_DETECTION_VERSION  = '1.1.0'; // Version of this class
     const MOBILE_DETECT_VERSION     = '2.5.3'; // Version of class Mobile_Detect
 
 	/**
@@ -50,25 +50,6 @@ class Mobile_Detection extends \System
 	    $this->import('Mobile_Detect','MobileDetect');
     }
 	
-	/**
-	 * Prevent cloning of the object (Singleton)
-	 */
-	//final private function __clone() {}
-	
-	/**
-	 * Return the current object instance (Singleton)
-	 * @return String
-	 *//*
-	public static function getInstance()
-	{
-	    if (!is_object(self::$objInstance))
-	    {
-	        self::$objInstance = new self();
-	    }
-	
-	    return self::$objInstance;
-	}*/
-
 	/**
 	 * Returns the version number
 	 *

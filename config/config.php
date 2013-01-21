@@ -37,3 +37,14 @@ array_insert($GLOBALS['FE_MOD'], 4, array
         'mobiledeviceinfo' => 'MobileDetection\ModuleDeviceInfo',
     )
 ));
+
+/**
+ * -------------------------------------------------------------------------
+ * HOOKS
+ * -------------------------------------------------------------------------
+ */
+$GLOBALS['TL_HOOKS']['generatePage'][]      = array('MobileDetection\Mobile_Detection_Hooks', 'insertInsertTagMD');
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MobileDetection\Mobile_Detection_Hooks', 'mobiledetectionReplaceInsertTags');
+
+
+
