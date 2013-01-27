@@ -14,11 +14,6 @@
  */
 
 /**
- * Run in a custom namespace, so the class can be replaced
- */
-namespace BugBuster\MobileDetection;
-
-/**
  * Class ModuleDeviceInfo
  * Use Mobile_Detection with import function
  *
@@ -26,7 +21,7 @@ namespace BugBuster\MobileDetection;
  * @author     Glen Langer (BugBuster)
  * @package    Mobiledetection
  */
-class ModuleDeviceInfo extends \Module
+class ModuleDeviceInfo extends Module
 {
 
     /**
@@ -43,7 +38,7 @@ class ModuleDeviceInfo extends \Module
     {
         if (TL_MODE == 'BE')
         {
-            $objTemplate = new \BackendTemplate('be_wildcard');
+            $objTemplate = new BackendTemplate('be_wildcard');
             $objTemplate->wildcard = '### Mobile_Detection Device Info ###';
             	
             $objTemplate->title = $this->headline;
@@ -64,7 +59,7 @@ class ModuleDeviceInfo extends \Module
     protected function compile()
     {
         // Import Mobile_Detection
-        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); //Workaround for $this->Mobile_Detection->...
+        $this->import('Mobile_Detection'); 
 
         
         $this->Template->device    = $this->Mobile_Detection->getDeviceType();

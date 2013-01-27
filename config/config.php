@@ -34,7 +34,7 @@ array_insert($GLOBALS['FE_MOD'], 4, array
 (
     'MobileDetectionDemo' => array
     (
-        'mobiledeviceinfo' => 'MobileDetection\ModuleDeviceInfo',
+        'mobiledeviceinfo' => 'ModuleDeviceInfo',
     )
 ));
 
@@ -43,8 +43,8 @@ array_insert($GLOBALS['FE_MOD'], 4, array
  * HOOKS
  * -------------------------------------------------------------------------
  */
-$GLOBALS['TL_HOOKS']['generatePage'][]      = array('MobileDetection\Mobile_Detection_Hooks', 'insertInsertTagMD');
-$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('MobileDetection\Mobile_Detection_Hooks', 'mobiledetectionReplaceInsertTags');
+$GLOBALS['TL_HOOKS']['generatePage'][]      = array('Mobile_Detection_Hooks', 'insertInsertTagMD');
+$GLOBALS['TL_HOOKS']['replaceInsertTags'][] = array('Mobile_Detection_Hooks', 'mobiledetectionReplaceInsertTags');
 
 
 

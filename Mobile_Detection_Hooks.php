@@ -15,18 +15,13 @@
 
 
 /**
- * Run in a custom namespace, so the class can be replaced
- */
-namespace BugBuster\MobileDetection;
-
-/**
  * Class Mobile_Detection_Hooks
  *
  * @copyright  Glen Langer 2013 <http://www.contao.glen-langer.de>
  * @author     Glen Langer (BugBuster)
  * @package    Mobiledetection
  */
-class Mobile_Detection_Hooks extends \Frontend
+class Mobile_Detection_Hooks extends Frontend
 {
    
     /**
@@ -60,7 +55,7 @@ class Mobile_Detection_Hooks extends \Frontend
         }
         
         // Import Mobile_Detection
-        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); //Workaround for $this->Mobile_Detection->...
+        $this->import('Mobile_Detection'); 
         $DeviceType = $this->Mobile_Detection->getDeviceType();
         
         return $DeviceType;

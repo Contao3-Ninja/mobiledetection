@@ -13,10 +13,6 @@
  * @see	       https://github.com/BugBuster1701/mobiledetection
  */
 
-/**
- * Run in a custom namespace, so the class can be replaced
- */
-namespace BugBuster\MobileDetection; 
 
 /**
  * Class Mobile_Detection
@@ -27,7 +23,7 @@ namespace BugBuster\MobileDetection;
  * @author     Glen Langer (BugBuster)
  * @package    MobileDetection
  */
-class Mobile_Detection extends \System
+class Mobile_Detection extends System
 {
     /**
      * Current version of the classes.

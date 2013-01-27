@@ -44,7 +44,7 @@ For the full list of available methods check the ![demo.php](https://github.com/
 
 ### Mobile_Detection (wrapper class)
 ```php
-$this->import('\MobileDetection\Mobile_Detection','Mobile_Detection');
+$this->import('Mobile_Detection');
 
 // Check device type
 echo $this->Mobile_Detection->getDeviceType(); // phone|tablet|computer
