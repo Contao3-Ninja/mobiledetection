@@ -1,5 +1,5 @@
 # Contao Module MobileDetection
-Contao 3 Module "Mobile-Detection", based on "http://mobiledetect.net/"
+Contao 2 Module "Mobile-Detection", based on "http://mobiledetect.net/"
 
 Helperclasses for developer. Demo frontend module is present.
 
