@@ -64,9 +64,9 @@ class ModuleDeviceInfo extends \Module
     protected function compile()
     {
         // Import Mobile_Detection
-        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); //Workaround for $this->Mobile_Detection->...
+        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); 
 
-        
+        $this->Template->agent     = $this->Mobile_Detection->getUserAgent();
         $this->Template->device    = $this->Mobile_Detection->getDeviceType();
         $this->Template->mobile    = $this->Mobile_Detection->isMobile();
         $this->Template->tablet    = $this->Mobile_Detection->isTablet();
