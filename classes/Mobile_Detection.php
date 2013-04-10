@@ -32,7 +32,7 @@ class Mobile_Detection extends \System
     /**
      * Current version of the classes.
      */
-    const MOBILE_DETECTION_VERSION  = '1.1.0'; // Version of this class
+    const MOBILE_DETECTION_VERSION  = '3.1.0'; // Version of this class
 
 
 	/**
