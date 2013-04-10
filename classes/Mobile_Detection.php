@@ -32,8 +32,8 @@ class Mobile_Detection extends \System
     /**
      * Current version of the classes.
      */
-    const MOBILE_DETECTION_VERSION  = '1.0.0'; // Version of this class
-    const MOBILE_DETECT_VERSION     = '2.5.3'; // Version of class Mobile_Detect
+    const MOBILE_DETECTION_VERSION  = '1.1.0'; // Version of this class
+
 
 	/**
 	 * Current object instance (Singleton)
@@ -63,7 +63,7 @@ class Mobile_Detection extends \System
 
 	public function getVersionVendor()
 	{
-	    return self::MOBILE_DETECT_VERSION;
+	    return $this->MobileDetect->getScriptVersion();
 	}
 
     /**
@@ -140,6 +140,26 @@ class Mobile_Detection extends \System
     public function getMobileGrade()
     {
         return $this->MobileDetect->mobileGrade();
+    }
+    
+    /**
+     * Get HTTP Headers, $_SERVER['HTTP_...']
+     * 
+     * @return    array    array[$key] = $value
+     */
+    public function getHttpHeaders()
+    {
+        return $this->MobileDetect->getHttpHeaders();
+    }
+    
+    /**
+     * Get User Agent
+     * 
+     * @return    string    $_SERVER[ HTTP_USER_AGENT|HTTP_X_DEVICE_USER_AGENT|HTTP_X_OPERAMINI_PHONE_UA ]
+     */
+    public function getUserAgent()
+    {
+        return $this->MobileDetect->getUserAgent();
     }
     
 }
