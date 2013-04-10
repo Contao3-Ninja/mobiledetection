@@ -15,6 +15,7 @@
 <div class="<?php echo $this->class; ?>"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
     <div class="mobiledetection_demo">
 	<h1>Mobile Detection Test</h1>
+	<p>User Agent  : <span class="agent"><?php echo $this->agent; ?></span></p>
 	<p>Device Type : <span class="devicetype"><?php echo $this->device; ?></span></p>
 	<p>Is Mobile ? : <span class="ismobile"><?php echo ($this->mobile) ? 'True' : 'False'; ?></span></p>
 	<p>Is Tablet ? : <span class="istablet"><?php echo ($this->tablet) ? 'True' : 'False'; ?></span></p>
@@ -26,7 +27,7 @@
 <?php endforeach; ?>
 <?php endif; ?>
 	</p>
-	<br>
+	<br />
 	<h2>Mobile Detection Version: <?php echo $this->version; ?>&nbsp;(<?php echo $this->versionvendor; ?>)</h2>
     </div>
 </div>
