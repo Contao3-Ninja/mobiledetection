@@ -51,25 +51,6 @@ class Mobile_Detection extends \System
     }
 	
 	/**
-	 * Prevent cloning of the object (Singleton)
-	 */
-	//final private function __clone() {}
-	
-	/**
-	 * Return the current object instance (Singleton)
-	 * @return String
-	 *//*
-	public static function getInstance()
-	{
-	    if (!is_object(self::$objInstance))
-	    {
-	        self::$objInstance = new self();
-	    }
-	
-	    return self::$objInstance;
-	}*/
-
-	/**
 	 * Returns the version number
 	 *
 	 * @return string

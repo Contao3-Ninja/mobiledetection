@@ -7,22 +7,26 @@
 .mobiledetection_demo .devicetype {
 	text-transform: capitalize;
 }
+.mobiledetection_demo p {
+	font-family: "Courier New", Courier, monospace;
+}
 /* ]]> */
 </style>
 <section class="<?php echo $this->class; ?>"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
     <div class="mobiledetection_demo">
     <h1>Mobile Detection Test</h1>
-	Device Type : <span class="devicetype"><?php echo $this->device; ?></span><br>
-	Is Mobile ? : <span class="ismobile"><?php echo ($this->mobile) ? 'True' : 'False'; ?></span><br>
-	Is Tablet ? : <span class="istablet"><?php echo ($this->tablet) ? 'True' : 'False'; ?></span><br>
-	Device Grade: <span class="grade"><?php echo $this->grade;  ?></span><br>
+	<p>Device Type : <span class="devicetype"><?php echo $this->device; ?></span></p>
+	<p>Is Mobile ? : <span class="ismobile"><?php echo ($this->mobile) ? 'True' : 'False'; ?></span></p>
+	<p>Is Tablet ? : <span class="istablet"><?php echo ($this->tablet) ? 'True' : 'False'; ?></span></p>
+	<p>Device Grade: <span class="grade"><?php echo $this->grade;  ?></span></p>
 <?php if ($this->mobile) : ?>
-	Device Rules: 
+	<p>Device Rules: 
 <?php foreach ($this->arrRules as $rule): ?>
 	<?php echo $rule . ' ';?>
 <?php endforeach; ?>
 <?php endif; ?>
-	<br><br>
+	</p>
+	<br>
 	<h2>Mobile Detection Version: <?php echo $this->version; ?>&nbsp;(<?php echo $this->versionvendor; ?>)</h2>
     </div>
 </section>
