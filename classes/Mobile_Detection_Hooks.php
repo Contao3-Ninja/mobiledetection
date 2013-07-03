@@ -60,7 +60,7 @@ class Mobile_Detection_Hooks extends \Frontend
         }
         
         // Import Mobile_Detection
-        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); //Workaround for $this->Mobile_Detection->...
+        $this->import('MobileDetection\Mobile_Detection','Mobile_Detection'); //Workaround for $this->Mobile_Detection->...
         $DeviceType = $this->Mobile_Detection->getDeviceType();
         
         return $DeviceType;
