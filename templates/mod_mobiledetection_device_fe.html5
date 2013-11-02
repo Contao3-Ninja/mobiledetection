@@ -1,6 +1,5 @@
 <!-- indexer::stop -->
-<style type="text/css">
-/* <![CDATA[ */
+<style>
 .mobiledetection_demo {
 	padding:10px;
 }
@@ -10,7 +9,6 @@
 .mobiledetection_demo p {
 	font-family: "Courier New", Courier, monospace;
 }
-/* ]]> */
 </style>
 <section class="<?php echo $this->class; ?>"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
     <div class="mobiledetection_demo">
