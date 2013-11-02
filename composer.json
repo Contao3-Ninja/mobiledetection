@@ -1,6 +1,6 @@
 {
 	"name":"bugbuster/mobiledetection",
-	"description":"Contao helper class for detecting mobile phones and tablets (device type). A "Hook" adds a CSS class in the body tag.",
+	"description":"Contao helper class for detecting mobile phones and tablets (device type). A Hook adds a CSS class in the body tag.",
 	"keywords":["detection","mobile","phone","tablet"],
 	"type":"contao-module",
 	"homepage":"http://www.contao.glen-langer.de",
