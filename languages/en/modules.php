@@ -15,11 +15,11 @@
 /**
  * Back end modules
  */
-$GLOBALS['TL_LANG']['MOD']['mobiledetection'] = array('Mobile Detection', 'Helper class to detect mobile devices.');
-
+$GLOBALS['TL_LANG']['MOD']['mobiledetection'][0] = 'Mobile Detection';
+$GLOBALS['TL_LANG']['MOD']['mobiledetection'][1] = 'Helper class to detect mobile devices.';
 
 /**
  * Front end modules
  */
-$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'] = array('Mobile Detection Demo', 'Device Info, use Mobile Detection with import.');
-
+$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][0] = 'Mobile Detection Demo';
+$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][1] = 'Device Info, use Mobile Detection with import.';
