@@ -20,7 +20,7 @@ namespace BugBuster\MobileDetection;
 
 /**
  * Class ModuleDeviceInfo
- * Use Mobile_Detection with import function
+ * Use Mobile_Detection 
  *
  * @copyright  Glen Langer 2013 <http://www.contao.glen-langer.de>
  * @author     Glen Langer (BugBuster)
@@ -64,7 +64,8 @@ class ModuleDeviceInfo extends \Module
     protected function compile()
     {
         // Import Mobile_Detection
-        $this->import('\MobileDetection\Mobile_Detection','Mobile_Detection'); 
+        //$this->import('\MobileDetection\Mobile_Detection','Mobile_Detection');
+        $this->Mobile_Detection = new \MobileDetection\Mobile_Detection();
 
         $this->Template->agent     = $this->Mobile_Detection->getUserAgent();
         $this->Template->device    = $this->Mobile_Detection->getDeviceType();

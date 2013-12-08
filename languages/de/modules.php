@@ -23,5 +23,5 @@ $GLOBALS['TL_LANG']['MOD']['mobiledetection'][1] = 'Hilfsklasse zur Erkennung vo
  * Front end modules
  */
 $GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][0] = 'Mobile Detection Demo';
-$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][1] = 'Device Info, Verwendung Mobile Detection über Import Methode.';
+$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][1] = 'Device Info, Verwendung von Mobile Detection Klasse.';
 

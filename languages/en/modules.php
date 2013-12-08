@@ -22,4 +22,4 @@ $GLOBALS['TL_LANG']['MOD']['mobiledetection'][1] = 'Helper class to detect mobil
  * Front end modules
  */
 $GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][0] = 'Mobile Detection Demo';
-$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][1] = 'Device Info, use Mobile Detection with import.';
+$GLOBALS['TL_LANG']['FMD']['mobiledeviceinfo'][1] = 'Device Info, using Mobile Detection class.';

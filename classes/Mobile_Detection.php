@@ -44,10 +44,11 @@ class Mobile_Detection extends \System
 	/**
 	 * Initialize the object
 	 */
-	protected function __construct() 
+	public function __construct() 
 	{
 	    parent::__construct();
-	    $this->import('Mobile_Detect','MobileDetect');
+	    //$this->import('Mobile_Detect','MobileDetect');
+	    $this->MobileDetect = new \Mobile_Detect();
     }
 	
 	/**
