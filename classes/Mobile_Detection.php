@@ -17,6 +17,7 @@
  * Run in a custom namespace, so the class can be replaced
  */
 namespace BugBuster\MobileDetection; 
+use Detection\MobileDetect;
 
 /**
  * Class Mobile_Detection
@@ -32,7 +33,7 @@ class Mobile_Detection extends \System
     /**
      * Current version of the classes.
      */
-    const MOBILE_DETECTION_VERSION  = '3.3.0'; // Version of this class
+    const MOBILE_DETECTION_VERSION  = '3.4.0'; // Version of this class
 
 
 	/**
@@ -47,8 +48,7 @@ class Mobile_Detection extends \System
 	public function __construct() 
 	{
 	    parent::__construct();
-	    //$this->import('Mobile_Detect','MobileDetect');
-	    $this->MobileDetect = new \Mobile_Detect();
+	    $this->MobileDetect = new MobileDetect();
     }
 	
 	/**
