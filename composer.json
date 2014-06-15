@@ -26,7 +26,8 @@
 	"require":{
 		"php":">=5.3",
 		"contao/core":">=3,<4",
-		"contao-community-alliance/composer-installer":"*"
+		"contao-community-alliance/composer-plugin": "*",
+		"mobiledetect/mobiledetectlib": "2.*"
 	},
 	"autoload":{
 		"classmap":[""]
