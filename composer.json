@@ -33,7 +33,7 @@
 		"classmap":[""]
 	},
 	"replace":{
-		"contao-legacy/mobiledetection":"*"
+		"contao-legacy/mobiledetection":"self.version"
 	},
 	"extra":{
 		"contao":{
