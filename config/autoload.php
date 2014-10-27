@@ -29,7 +29,6 @@ ClassLoader::addClasses(array
 	'BugBuster\MobileDetection\ModuleDeviceInfo'       => 'system/modules/mobiledetection/modules/ModuleDeviceInfo.php',
 
 	// Classes
-	'Mobile_Detect'                                    => 'system/modules/mobiledetection/classes/Mobile_Detect.php',
 	'BugBuster\MobileDetection\Mobile_Detection'       => 'system/modules/mobiledetection/classes/Mobile_Detection.php',
 	'BugBuster\MobileDetection\Mobile_Detection_Hooks' => 'system/modules/mobiledetection/classes/Mobile_Detection_Hooks.php',
 ));
