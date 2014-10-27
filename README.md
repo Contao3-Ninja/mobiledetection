@@ -11,7 +11,7 @@ Helperclasses for developer. Demo frontend module is present.
 * Do not use the ZIP file from GitHub! Use the ER2 [mobiledetection](https://contao.org/en/extension-list/view/mobiledetection.html)
 
 ### Over Composer
-* Search for ![bugbuster/mobiledetection](https://packagist.org/packages/bugbuster/mobiledetection), version >= 3.5
+* Search for [bugbuster/mobiledetection](https://packagist.org/packages/bugbuster/mobiledetection), version >= 3.5
 * composer loads additionally "mobiledetect/mobiledetectlib" version 2.*
 
 ## Hooks help!
